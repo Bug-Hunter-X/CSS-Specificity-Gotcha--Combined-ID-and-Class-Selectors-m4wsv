@@ -1,0 +1,9 @@
+The solution involves a careful understanding and application of CSS selector specificity.  Here's how to fix the problem:
+
+1. **Understanding Specificity:** ID selectors (#) have higher specificity than class selectors (.). Combining both in a selector increases its specificity.
+
+2. **Addressing the Issue:** If you want to maintain the color green defined by the `#specific-div` selector, you have a few choices:
+    * **Reorder your CSS:** Put the `#specific-div` rule after `#specific-div.container`
+    * **Use !important:**  Use `!important` flag on `#specific-div { color: green !important; }` (This is generally discouraged).
+
+The corrected CSS in `bugSolution.css` illustrates a good solution to the problem.
